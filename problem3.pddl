@@ -57,7 +57,4 @@
 		(clean office4) (clean office5) (clean office6)
 		(clean office7) (clean office8) (clean office9)
 ))
-
-;un-comment the following line if metric is needed
-;(:metric minimize (???))
 )

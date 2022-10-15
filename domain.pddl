@@ -41,10 +41,12 @@
 		(adjacent ?office1 ?office2)
 	)
 	:effect (and
-		(box-location ?box ?office2)
-		(robot-location ?office2)
-		(empty ?office1)
-		(not (empty ?office2))
+		(box-location ?box ?office2) (not (box-location ?box ?office1))
+
+		(robot-location ?office2) (not (robot-location ?office1))
+
+		(empty ?office1) (not (empty ?office2))
+
 	)
 )
 
@@ -56,6 +58,7 @@
 	)
 	:effect (and
 		(robot-location ?office2)
+		(not (robot-location ?office1))
 	)
 )
 )
